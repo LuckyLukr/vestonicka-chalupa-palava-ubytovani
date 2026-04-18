@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  background: #fcf8f3;
+  color: #2f3a33;
+}
+
+.bg-organic {
+  background:
+    radial-gradient(circle at top left, rgba(215, 185, 142, 0.35), transparent 35%),
+    radial-gradient(circle at bottom right, rgba(143, 168, 139, 0.25), transparent 35%),
+    linear-gradient(135deg, rgba(252, 248, 243, 0.95), rgba(246, 239, 231, 0.9));
+}
+
+.hero-overlay {
+  background:
+    linear-gradient(180deg, rgba(32, 38, 33, 0.15), rgba(32, 38, 33, 0.55)),
+    linear-gradient(120deg, rgba(166, 106, 76, 0.25), rgba(63, 90, 75, 0.2));
+}
+
+.section-blob::before {
+  content: "";
+  position: absolute;
+  inset: auto auto -40px -40px;
+  width: 160px;
+  height: 160px;
+  border-radius: 999px;
+  background: rgba(143, 168, 139, 0.10);
+  filter: blur(8px);
+  z-index: 0;
+}
+
+.focus-ring:focus-visible {
+  outline: 3px solid #7c4a43;
+  outline-offset: 3px;
+  border-radius: 12px;
+}
